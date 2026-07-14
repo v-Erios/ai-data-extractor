@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Extractor de Datos IA",
+  "version": "1.0",
+  "description": "Extrae y estructura datos usando IA.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "extractor-ia@javi.dev",
+      "strict_min_version": "109.0"
+    }
+  },
+  "icons": {
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "assets/icon.png",
+      "128": "assets/icon.png"
+    }
+    
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "MacCtrl+Shift+E"
+      },
+      "description": "Abre el popup de la extensión"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"]
+    }
+  ],
+  "background":{
+    "scripts":["scripts/background.js"]
+  }
+}

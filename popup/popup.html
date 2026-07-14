@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Extractor IA</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h3>Extractor IA</h3>
+
+  <div class="configuracion">
+    <label style="font-size: 11px; color: #555;">Configuración de IA:</label>
+    <input type="password" id="input-apikey" placeholder="Pega tu API Key de Gemini" style="width: 100%; box-sizing: border-box; margin-top: 5px; padding: 6px; border: 1px solid #ccc; border-radius: 4px;">
+    <button id="btn-guardar" style="background-color: #6c757d; margin-top: 8px; padding: 6px; font-size: 12px;">Guardar Key</button>
+  </div>
+  
+  <button id="btn-extraer">Extraer Datos</button>
+  
+  <div id="resultado">Esperando acción...</div>
+  
+  <!-- El nuevo botón oculto -->
+  <button id="btn-csv">Descargar CSV</button>
+
+  <!-- Es vital cargar el JS al final del body -->
+  <script src="popup.js"></script>
+</body>
+</html>
