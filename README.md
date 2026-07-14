@@ -1,4 +1,4 @@
-# < AI_DATA_EXTRACTOR_v1.0 // >
+# < AI_DATA_EXTRACTOR_v2.0 // >
 
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-black?style=for-the-badge&logo=googlechrome)](#)
 [![Gemini 2.5](https://img.shields.io/badge/API-Gemini_2.5_Flash-black?style=for-the-badge&logo=google)](#)
